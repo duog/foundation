@@ -17,12 +17,11 @@ import           Foreign.C.Types
 import           System.Posix.Internals hiding (FD)
 import           System.Posix.Types (CMode(..))
 import           Foundation.Internal.Base
-import           Foundation.Internal.Types
+import           Foundation.Primitive.Types.OffsetSize
 import           Foundation.Primitive.Monad
 import qualified Foundation.Array.Unboxed as UA
 import           Foundation.Array.Unboxed
 import           Foundation.Array.Unboxed.Mutable
-import           Foundation.String.UTF8
 import           Foundation.VFS.FilePath
 
 #if defined(mingw32_HOST_OS)

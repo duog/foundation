@@ -163,6 +163,7 @@ library
                      Foundation.Numerical.Floating
                      Foundation.IO.File
                      Foundation.IO.Terminal
+                     Foundation.IO.Handle.Common
                      Foundation.Primitive.Base16
                      Foundation.Primitive.Block.Base
                      Foundation.Primitive.Block.Mutable
@@ -199,6 +200,7 @@ library
                      Foundation.Partial
                      Foundation.System.Entropy.Common
                      Foundation.System.Bindings.Network
+                     Foundation.System.Bindings.Hs
 
   include-dirs:      cbits
   c-sources:         cbits/foundation_random.c
@@ -215,7 +217,6 @@ library
   else
     exposed-modules: Foundation.System.Bindings.Posix
                      Foundation.System.Bindings.PosixDef
-                     Foundation.System.Bindings.Hs
     other-modules:   Foundation.Foreign.MemoryMap.Posix
                      Foundation.System.Entropy.Unix
                      Foundation.IO.Handle.Posix
